@@ -171,6 +171,9 @@ namespace Hooks
 				Render::Get().Line(0, ScreenHeight / 2, ScreenWidth, ScreenHeight / 2, Color(0, 0, 0, 150));
 			}
 
+			// Recoil already has checks for if the localplayer is alive.
+			if (Feature.Recoil) Visuals::Get().Recoil();
+
 			for (int i = 1; i <= 64; i++) 
 			{
 				C_BasePlayer* Player = C_BasePlayer::GetPlayerByIndex(i);
@@ -185,7 +188,6 @@ namespace Hooks
 						if (Feature.Name) Visuals::Get().Name();
 						if (Feature.Box) Visuals::Get().Box();
 						if (Feature.Radar) Visuals::Get().Radar();
-						if (Feature.Recoil) Visuals::Get().Recoil();
 					}
 				}
 			}

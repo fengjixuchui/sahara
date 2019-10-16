@@ -14,8 +14,8 @@ public:
 #pragma region Aimbot
 	CONFIG(bool, Enabled, false);
 
-	CONFIG(int, Hitchance, 0);
-	CONFIG(int, Damage, 0);
+	CONFIG(int, Hitchance, 25);
+	CONFIG(int, Damage, 15);
 #pragma endregion
 
 #pragma region Visuals
@@ -25,8 +25,7 @@ public:
 	CONFIG(bool, Radar, false);
 	CONFIG(bool, Recoil, false);
 
-	CONFIG(int, x, 0);
-	CONFIG(int, y, 0);
+	CONFIG(int, Size, 5);
 #pragma endregion
 
 #pragma region Misc
